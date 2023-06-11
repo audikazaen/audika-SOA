@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/logoits.png">
+  <title>ITS Sport </title>
+</head>
+<body>
+
+  <h1> Isi data feedback di bawah ini</h1>
+<p>click "Submit" to submit the form:</p>
+
+<form id="frm1" action="http://localhost:3000/feedbacks" method="POST">
+  No HP: <input type="text" name="user_nohp"><br><br>
+  Nama: <input type="text" name="user_name"><br><br>
+  Feedback: <input type="text" name="user_feedback"><br><br>
+  <input type="button" onclick="myFunction()" value="Submit">
+</form>
+
+<script>
+function myFunction() {
+  document.getElementById("frm1").submit();
+}
+</script>
+
+</body>
+</html>
